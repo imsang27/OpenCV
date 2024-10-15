@@ -21,9 +21,9 @@ emboss = np.uint8(np.clip(cv.filter2D(gray16, -1, femboss)+ 128, 0, 255))
 emboss_bad = np.uint8(cv.filter2D(gray16, -1, femboss)+ 128)
 emboss_worse = cv.filter2D(gray, -1, femboss)
 
-# cv.imshow('Emboss', emboss)
-# cv.imshow('Emboss_bad', emboss_bad)
-# cv.imshow('Emboss_worse', emboss_worse)
+cv.imshow('Emboss', emboss)
+cv.imshow('Emboss_bad', emboss_bad)
+cv.imshow('Emboss_worse', emboss_worse)
 
 cv.waitKey()
 cv.destroyAllWindows()
